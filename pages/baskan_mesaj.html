@@ -1,0 +1,47 @@
+<h2>Başkana İstek ve teşekkürlerinizi  Burdan İletebilirsiniz.
+        
+        </h2>
+<div class="approved success-message hidden">
+      <div class="typo-icon">
+                Mesajınız Başkana iletilmiştir.
+  </div>
+        </div>
+        <form action="submit_contact.php" method="post">
+          <div class="form-element">
+            <label for="txtfullname">Adınız</label>
+            <input id="txtfullname" name="fullname" type="text" placeholder="gerekli" required />
+          </div>
+          <div class="form-element">
+            <label for="txtemail">Email</label>
+            <input id="txtemail" name="email" type="email" placeholder="gerekli" required  />
+          </div>
+          <div class="form-element">
+            <label for="txtcontact">Telefon Numarınız</label>
+            <input id="txtcontact" name="contact" type="tel" placeholder="opsiyonel" />
+          </div>
+         
+  			
+		  <div class="form-element">
+      <p>Mesajınızın Konusu</p>
+        <select name="thelist" onChange="combo(this, 'theinput')" onMouseOut="comboInit(this, 'Meslek')" >
+          <option>Teşekkür</option>
+          <option>İstek</option>
+          <option>Şikayet</option>
+          
+        </select>
+      </p>
+</div>
+		
+          
+        <div class="form-element">
+            <label for="txtmessage">Mesajınız<br></label>
+            <textarea id="txtmessage" name="message" placeholder="gerekli" rows="5" required ></textarea>
+          </div>
+          <input type="reset" class="button button3" value="Yenile" />
+          <input type="submit" class="button button2" value="Gönder" />
+        
+        </form>
+      
+      
+      
+      

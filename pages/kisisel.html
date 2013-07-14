@@ -1,0 +1,48 @@
+<a class="back-trigger" href="pages/bilgi.html">&lt;</a>
+      <div class="address-container">
+        
+        <div class="approved success-message hidden">
+              <div class="typo-icon">
+                Bilgileriniz kaydedilmiştir. Daha sonra dğişiklik yapabilirsiniz.
+              </div>
+        </div>
+        <form action="submit_contact.php" method="post">
+          <div class="form-element">
+            <label for="txtad">Ad-Soyad</label>
+            <input id="txtad" name="ad" type="text" placeholder="gerekli" required />
+          </div>
+          <div class="form-element">
+            <label for="txtemail">Email</label>
+            <input id="txtemail" name="email" type="email" placeholder="gerekli" required  />
+          </div>
+          <div class="form-element">
+            <label for="txtiletisim">Telefon</label>
+            <input id="txtiletisim" name="telefon" type="telefon" placeholder="opsiyonel" />
+          </div>
+                    
+          <div class="form-element">
+      <p>Egitim</p>
+        <select name="thelist" onChange="combo(this, 'theinput')" onMouseOut="comboInit(this, 'Egitim')" >
+          <option>universite   </option>
+          <option>lise</option>
+          <option>hicbiri</option>
+        </select>
+      </p>
+</div>
+<div class="form-element">
+      <p>Meslek</p>
+        <select name="thelist" onChange="combo(this, 'theinput')" onMouseOut="comboInit(this, 'Meslek')" >
+          <option>Bilgisayar Muhendisligi</option>
+          <option>Isletme</option>
+          <option>Ogretmen</option>
+          <option>Doktor</option>
+        </select>
+      </p>
+</div>
+
+ 
+            
+             <input type="reset" class="button button3" value="Yenile" />
+          <input type="submit" class="button button2" value="Gonder" />
+        </form>
+      </div>
